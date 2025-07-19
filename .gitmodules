@@ -1,0 +1,3 @@
+[submodule "docker_multi_stage_lab"]
+	path = docker_multi_stage_lab
+	url = https://github.com/Jeeavn1995/Docker-training-lab.git
