@@ -1,0 +1,23 @@
+#base image (os)
+
+FROM node:18-alpine
+
+#make a directories where app will be stored
+
+WORKDIR /app
+
+#Copy the code from local host to container
+
+COPY . .
+
+#code build and install
+
+RUN npm install && npm run build
+
+#expose port 
+
+EXPOSE 3000
+
+#Serve tye app and keep on running
+
+CMD ["npm","run","dev"]
